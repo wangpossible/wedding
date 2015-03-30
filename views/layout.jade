@@ -1,0 +1,25 @@
+doctype html
+html(lang='zh-cn',xmlns:wb='http://open.weibo.com/wb')
+  head
+    title= title
+    meta(charset='UTF-8')
+    <meta property="wb:webmaster" content="7e48a2ba8fb09989" />
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(href='images/favicon.ico', rel='shortcut icon')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap-theme.min.css')
+    link(rel='stylesheet', href='/stylesheets/timeline.css')
+    script(type='text/javascript',src='javascripts/jquery.min.js')
+    script(type='text/javascript',src='javascripts/bootstrap.min.js')
+    script(type='text/javascript',src='javascripts/firebase.js')
+    script(type='text/javascript',src='javascripts/timeline-min.js')
+    script(type='text/javascript',src='http://pv.sohu.com/cityjson')
+    script(type='text/javascript',src='http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=97706022')
+    <!--[if lt IE 9]>
+    script(type='text/javascript',src='http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js')
+    script(type='text/javascript',src='http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js')
+    <![endif]-->
+  body
+    block content

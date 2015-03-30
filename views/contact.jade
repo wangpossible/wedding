@@ -1,0 +1,63 @@
+extends layout
+
+block content 
+    nav.navbar.navbar-default.navbar-inverse.navbar-fixed-top(role='navigation')
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#title')
+            span.sr-only Toggle navigation
+            |             
+            span.icon-bar
+            |             
+            span.icon-bar
+            |             
+            span.icon-bar
+          |           
+          a.navbar-brand(href='/') &#x695A;&#x6C49;&#x5355;&#x8F66;&#x4FF1;&#x4E50;&#x90E8;
+        #title.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li
+              a(href='/') &#x9996;&#x9875;
+            |          
+            |             
+            li
+              a(href='/product') &#x88C5;&#x5907;&#x5E93;
+            |             
+            li
+              a(href='/show') &#x6211;&#x578B;&#x6211;&#x79C0;
+            |             
+            li
+              a(href='/event') &#x62C9;&#x5E2E;&#x7ED3;&#x6D3E;
+            |             
+            li.active
+              a(href='/contact') &#x8054;&#x7CFB;&#x6211;&#x4EEC;
+    .container-fluid(style='background: #f9f9f9;')
+      .row
+        .jumbotron
+          h1 &#x5173;&#x4E8E;&#x6211;&#x4EEC;&#x4F60;&#x6709;&#x4EC0;&#x4E48;&#x8BF4;&#x7684;&#xFF1F;
+          | &#x9;&#x9;&#x9;&#x9;  
+          p &#x4E0D;&#x7BA1;&#x662F;&#x5410;&#x69FD;&#x8FD8;&#x662F;&#x5EFA;&#x8BAE;&#x90FD;&#x53EF;&#x4EE5;&#xFF0C;&#x53EA;&#x8981;&#x4F60;&#x4E0D;&#x723D;&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x5728;&#x4E0B;&#x9762;&#x55B7;&#xFF0C;&#x55B7;&#xFF01;&#xFF01;&#xFF01;&#x55B7;&#xFF01;&#xFF01;&#xFF01;&#x55B7;&#xFF01;&#xFF01;&#xFF01;&#x55B7;&#xFF01;&#xFF01;&#xFF01;
+      | &#x9;&#x9;    
+      .row
+        #SOHUCS(sid='contact')
+      |     &#x9;&#x9;
+      .row(style='background-color:rgba(0,0,0,0.65);margin-top: 30px;')
+        .container(style='height:40px;margin-top:20px;')
+          .col-md-12
+            center
+              a(href='http://wangshoufang.com', style='color: #fff;') @&#x695A;&#x6C49;&#x5355;&#x8F66;&#x4FF1;&#x4E50;&#x90E8; &nbsp;&nbsp;Powered by Wang Shoufang
+    | &#x9;
+    | &#x9;
+    script.
+      (function(){
+      var appid = 'cyrfRc6BV',
+      conf = 'prod_8d64317da26456e6236e881b29ccc060';
+      var doc = document,
+      s = doc.createElement('script'),
+      h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+      s.type = 'text/javascript';
+      s.charset = 'utf-8';
+      s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
+      h.insertBefore(s,h.firstChild);
+      window.SCS_NO_IFRAME = true;
+      })()

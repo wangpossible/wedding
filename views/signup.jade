@@ -1,0 +1,122 @@
+doctype html
+html(lang='zh-cn', xmlns:wb='http://open.weibo.com/wb')
+  head
+    title &#x695A;&#x6C49;&#x5355;&#x8F66;&#x4FF1;&#x4E50;&#x90E8;
+    |  
+    |   
+    meta(charset='UTF-8')
+    |  
+    |   
+    meta(property='wb:webmaster', content='7e48a2ba8fb09989')
+    |  
+    |   
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    |  
+    |   
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    |  
+    |   
+    link(href='images/favicon.ico', rel='shortcut icon')
+    |  
+    |   
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    |  
+    |   
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    |  
+    |   
+    link(rel='stylesheet', href='/stylesheets/bootstrap-theme.min.css')
+    |   
+    script(type='text/javascript', src='/javascripts/jquery.min.js')
+    |  
+    |   
+    script(type='text/javascript', src='/javascripts/bootstrap.min.js')
+    |  
+    |   
+    script(type='text/javascript', src='/javascripts/firebase.js')
+    |  
+    |   
+    script(type='text/javascript', src='http://pv.sohu.com/cityjson')
+    |  
+    |   
+    script(type='text/javascript', src='http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=97706022')
+    //if lt IE 9
+      script(src='http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js')
+      | &#x9;
+      script(src='http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js')
+  |  
+  |  
+  body
+    nav.navbar.navbar-default.navbar-inverse.navbar-fixed-top(role='navigation')
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#title')
+            span.sr-only Toggle navigation
+            |  
+            span.icon-bar
+            |  
+            span.icon-bar
+            |  
+            span.icon-bar
+          |  
+          |      
+          a.navbar-brand(href='/') &#x695A;&#x6C49;&#x5355;&#x8F66;&#x4FF1;&#x4E50;&#x90E8;
+        |  
+        |     
+        #title.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li.active
+              a(href='/') &#x9996;&#x9875;
+            |  
+            |       
+            li
+              a(href='/product') &#x88C5;&#x5907;&#x5E93;
+            |  
+            |       
+            li
+              a(href='/show') &#x6211;&#x578B;&#x6211;&#x79C0;
+            |  
+            |       
+            li
+              a(href='/event') &#x62C9;&#x5E2E;&#x7ED3;&#x6D3E;
+            |  
+            |       
+            li
+              a(href='/contact') &#x8054;&#x7CFB;&#x6211;&#x4EEC;
+    |  
+    |  
+    .container-fluid
+      .row
+        .col-md-8
+          img.img-responsive(src='http://bullshit.qiniudn.com/joinus.jpg', alt='join us')
+        |       
+        .col-md-4
+          form(method='post', action='/users/signup', style='margin-top:35px;')
+            .form-group
+              p.text-center
+                strong &#x6CE8;&#x518C;
+            |  
+            |            
+            .form-group
+              label(for='exampleInputEmail1') &#x90AE;&#x7BB1;
+              |  
+              |             
+              input#exampleInputEmail1.form-control(type='email', placeholder='Enter email', name='username', style='width:100%;',required)
+            |  
+            |            
+            .form-group
+              label(for='exampleInputPassword1') &#x5BC6;&#x7801;
+              |  
+              |             
+              input#exampleInputPassword1.form-control(type='password', placeholder='Password', name='password', style='width:100%;',required)
+            |  
+            | &#x9;&#x9;&#x9;
+            if errMsg
+              h3.bg-danger= errMsg			
+            button.btn.btn-primary.btn-lg.btn-block(type='submit') &#x6CE8;&nbsp;&nbsp;&#x518C;
+      |     
+      .row(style='background-color:rgba(0,0,0,0.65);margin-top: 30px;')
+        .container(style='height:40px;margin-top:20px;')
+          .col-md-12
+            center
+              a(href='http://wangshoufang.com', style='color: #fff;') @&#x695A;&#x6C49;&#x5355;&#x8F66;&#x4FF1;&#x4E50;&#x90E8; &nbsp;&nbsp;Powered by Wang Shoufang

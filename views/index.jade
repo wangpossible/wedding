@@ -1,0 +1,145 @@
+extends layout
+
+block content 
+    nav.navbar.navbar-default.navbar-inverse.navbar-fixed-top(role='navigation')
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#title')
+            span.sr-only Toggle navigation
+            |             
+            span.icon-bar
+            |             
+            span.icon-bar
+            |             
+            span.icon-bar
+          |           
+          a.navbar-brand(href='/') &#x695A;&#x6C49;&#x5355;&#x8F66;&#x4FF1;&#x4E50;&#x90E8;
+        #title.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li.active
+              a(href='/') &#x9996;&#x9875;
+            |          
+            |             
+            li
+              a(href='/product') &#x88C5;&#x5907;&#x5E93;
+            |             
+            li
+              a(href='/show') &#x6211;&#x578B;&#x6211;&#x79C0;
+            |             
+            li
+              a(href='/event') &#x62C9;&#x5E2E;&#x7ED3;&#x6D3E;
+            |             
+            li
+              a(href='/contact') &#x8054;&#x7CFB;&#x6211;&#x4EEC;
+    #banner.carousel.slide(data-ride='carousel')
+      // Indicators
+      ol.carousel-indicators
+        li.active(data-target='#banner', data-slide-to='0')
+        |         
+        li(data-target='#banner', data-slide-to='1')
+        |         
+        li(data-target='#banner', data-slide-to='2')
+        |         
+        li(data-target='#banner', data-slide-to='3')        
+      // Wrapper for slides
+      .carousel-inner(role='listbox')
+        .item.active
+          img(src='http://bullshit.qiniudn.com/1.jpg', alt='旅行，就是离开熟悉的地方，然后不一样的归来',style='width:100%;')
+          |           
+          .carousel-caption(style='font-size: 20px;')
+            strong &#x65C5;&#x884C;&#xFF0C;&#x5C31;&#x662F;&#x79BB;&#x5F00;&#x719F;&#x6089;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x7136;&#x540E;&#x4E0D;&#x4E00;&#x6837;&#x7684;&#x5F52;&#x6765;
+        |         
+        .item
+          img(src='http://bullshit.qiniudn.com/2.jpg', alt='用车轮丈量生命',style='width:100%;')
+          |           
+          .carousel-caption(style='font-size: 20px;')
+            strong &#x7528;&#x8F66;&#x8F6E;&#x4E08;&#x91CF;&#x751F;&#x547D;
+        |         
+        .item
+          img(src='http://bullshit.qiniudn.com/3.jpg', alt='上坡如存钱，下坡如花钱上坡有多累，下坡有多爽',style='width:100%;')
+          |           
+          .carousel-caption(style='font-size: 20px;')
+            strong &#x4E0A;&#x5761;&#x5982;&#x5B58;&#x94B1;&#xFF0C;&#x4E0B;&#x5761;&#x5982;&#x82B1;&#x94B1;&#x4E0A;&#x5761;&#x6709;&#x591A;&#x7D2F;&#xFF0C;&#x4E0B;&#x5761;&#x6709;&#x591A;&#x723D;
+        |         
+        .item
+          img(src='http://bullshit.qiniudn.com/4.jpg', alt='再不疯狂，我们就老了',style='width:100%;')
+          |           
+          .carousel-caption(style='font-size: 20px;')
+            strong 再不疯狂，我们就老了            
+      // Controls
+      a.left.carousel-control(href='#banner', role='button', data-slide='prev')
+        span.glyphicon.glyphicon-chevron-left
+        |         
+        span.sr-only Previous
+      |       
+      a.right.carousel-control(href='#banner', role='button', data-slide='next')
+        span.glyphicon.glyphicon-chevron-right
+        |         
+        span.sr-only Next
+    // 更多关于我们
+    .container-fluid(style='background: #f9f9f9;')
+      .row
+        .col-md-3.wells(style='text-align:center;margin-top:10px;')
+          <wb:livestream skin="silver" appkey="97706022" topic="%E5%8C%97%E4%BA%AC%E5%91%A8%E8%BE%B9%E9%AA%91%E8%A1%8C%E8%B7%AF%E7%BA%BF|%E5%8C%97%E4%BA%AC%E5%91%A8%E8%BE%B9%E9%AA%91%E8%A1%8C%E8%B7%AF%E7%BA%BF" width="auto" listid="3814549440071319" uid="5289164601" height="500" ></wb:livestream>
+        |     
+        .col-md-9.wells(style='text-align:center;margin-top:10px;')
+          <wb:topic uid="5289164601" topmid="chuhanbike5555555555" column="y" border="n" red_text="看好" blue_text="不看好" height="500" tags="你看好楚汉单车俱乐部？" ></wb:topic>
+      |             
+      .row
+        .col-md-7
+          h2.featurette-heading &#x76F8;&#x4FE1;&#x81EA;&#x5DF1;
+          |               
+          p.lead
+            | &#x6709;&#x591A;&#x5C11;&#x6B21;&#x6325;&#x6C57;&#x5982;&#x96E8;&#xFF0C;&#x4F24;&#x75DB;&#x66FE;&#x6DFB;&#x6EE1;&#x8BB0;&#x5FC6;&#xFF0C;&#x53EA;&#x56E0;&#x4E3A;&#x59CB;&#x7EC8;&#x76F8;&#x4FE1;&#xFF0C;&#x53BB;&#x62FC;&#x640F;&#x624D;&#x80FD;&#x80DC;&#x5229;&#x3002;&#x603B;&#x5728;&#x9F13;&#x821E;&#x81EA;&#x5DF1;&#xFF0C;&#x8981;&#x6210;&#x529F;&#x5C31;&#x5F97;&#x52AA;&#x529B;&#x3002;&#x70ED;&#x8840;&#x5728;&#x8D5B;&#x573A;&#x6CB8;&#x817E;&#xFF0C;&#x5DE8;&#x4EBA;&#x5728;&#x8D5B;&#x573A;&#x5347;&#x8D77;&#x3002;&#x76F8;&#x4FE1;&#x81EA;&#x5DF1;&#xFF0C;&#x4F60;&#x5C06;&#x8D62;&#x5F97;&#x80DC;&#x5229;&#xFF0C;&#x521B;&#x9020;&#x5947;&#x8FF9;&#xFF1B;&#x76F8;&#x4FE1;&#x81EA;&#x5DF1;&#xFF0C;&#x68A6;&#x60F3;&#x5728;&#x4F60;&#x624B;&#x4E2D;&#xFF0C;&#x8FD9;&#x662F;&#x4F60;&#x7684;&#x5929;&#x5730;&#x3002;&#x5F53;&#x4E00;&#x5207;&#x8FC7;&#x53BB;&#xFF0C;&#x4F60;&#x4EEC;&#x5C06;&#x662F;&#x7B2C;&#x4E00;&#x3002;&#x76F8;&#x4FE1;&#x81EA;&#x5DF1;&#xFF0C;&#x4F60;&#x4EEC;&#x5C06;&#x8D85;&#x8D8A;&#x6781;&#x9650;&#xFF0C;&#x8D85;&#x8D8A;&#x81EA;&#x5DF1;&#xFF01;&#x76F8;&#x4FE1;&#x81EA;&#x5DF1;
+        |             
+        .col-md-5
+          img.featurette-image.img-responsive(alt='500x500', src='images/xiangshan.jpg')
+      |             
+      .row
+        .well(style='text-align:center;margin-top:10px;')
+          h2.featurette-heading &#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x52A0;&#x5165;&#x6211;&#x4EEC;
+          |             
+          p &#x4E00;&#x4E2A;&#x4EBA;&#x53EF;&#x4EE5;&#x8D70;&#x7684;&#x66F4;&#x5FEB;,&#x4F46;&#x662F;&#x4E00;&#x7FA4;&#x4EBA;&#x624D;&#x80FD;&#x8D70;&#x7684;&#x66F4;&#x8FDC;&#x3002;
+      |             
+      .row
+        .col-md-3(style='text-align:center;padding-top: 10px;')
+          div.gan
+          |               
+          p
+            | Nothing compares with the simple pleasure of a bike ride.
+          |               
+          p
+            a.btn.btn-default(href='#', role='button') View details &raquo;
+        |          
+        .col-md-3(style='text-align:center;padding-top: 10px;')
+          div.de
+          |               
+          p
+            | It is easy to be a holy man on a mountain bike.
+          |               
+          p
+            a.btn.btn-default(href='#', role='button') View details &raquo;
+        |          
+        .col-md-3(style='text-align:center;padding-top: 10px;')
+          div.piao
+          |               
+          p
+            | If you brake, you don't win.
+          |               
+          p
+            a.btn.btn-default(href='#', role='button') View details &raquo;
+        |          
+        .col-md-3(style='text-align:center;padding-top: 10px;')
+          div.liang
+          |               
+          p
+            | As long as I breathe, I attack.
+          |               
+          p
+            a.btn.btn-default(href='#', role='button') View details &raquo;
+      |         
+      .row(style='background-color:rgba(0,0,0,0.65);margin-top: 30px;')
+        .container(style='height:40px;margin-top:20px;')
+          .col-md-12
+            center
+              a(href='http://wangshoufang.com', style='color: #fff;') @&#x695A;&#x6C49;&#x5355;&#x8F66;&#x4FF1;&#x4E50;&#x90E8; &nbsp;&nbsp;Powered by Wang Shoufang
